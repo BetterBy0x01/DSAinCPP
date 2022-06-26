@@ -1,0 +1,2 @@
+Sieve of Eratosthenes
+-> this method is used to print all the prime numbers in a given range.
