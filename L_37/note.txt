@@ -1,0 +1,18 @@
+Inclusion-Exclusion principle - for programming questions asking for the no. of ways to do something.
+
+/*
+    In a class students are given option to either opt for french or german class
+    Let n1 students chose french,   
+        n2 students chose German,
+      & n3 students chose both 
+      So, the total number of students in the class = (n1+n2-n3)
+        or 
+        total no. of ways = (no. of ways to do one thing in a way + 
+                             no. of ways to do the thing in another way - 
+                             no. of ways to do both things).
+*/
+
+The inclusion-exclusion principle shown here works only if two numbers are co-primes. 
+So a more general way is to 
+    count the nums divisible by a + count the nums divisible by b - count the nums divisible by LCM(a,b).
+To get LCM(a,b) , we have the formula lcm(a,b) = a*b/gcd(a,b)
