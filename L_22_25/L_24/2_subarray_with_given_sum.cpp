@@ -11,15 +11,14 @@ int main() {
     }
     int i = 0, j = 0, st=-1, en=-1, currSum = 0;
 
-    // NOT NEED OF THE BELOW CODE AS FAR AS MY KNOWLEDGE IS CONSIDERED
-    // while (j < n && (currSum + arr[j]) <= sum) {
-    //     currSum += arr[j];
-    //     j++;
-    // }
-    // if (currSum == sum) {
-    //     cout << (i+1) << " " << j << endl;
-    //     return 0;
-    // }
+    while (j < n && (currSum + arr[j]) <= sum) {
+        currSum += arr[j];
+        j++;
+    }
+    if (currSum == sum) {
+        cout << (i+1) << " " << j << endl;
+        return 0;
+    }
     while (j < n) {
         currSum += arr[j];
         while (currSum > sum) {
