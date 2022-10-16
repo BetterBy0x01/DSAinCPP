@@ -17,6 +17,6 @@ void subseq(string s, string ans) {
 }
 
 int main() {
-    subseq("ABC", "");
+    subseq("AB", "");
     return 0;
 }
