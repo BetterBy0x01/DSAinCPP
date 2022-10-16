@@ -7,6 +7,8 @@
         6-6 = 0
 
         OR
+
+        GCD(a,b) = GCD(b,a%b)   a > b
         42%24 = 18
         24%18 = 6
         18%6 = 0            // when we get this 0 we stop and we now have our gcd

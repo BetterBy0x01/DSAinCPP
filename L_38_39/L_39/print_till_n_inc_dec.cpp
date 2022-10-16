@@ -1,22 +1,23 @@
-/* 
-    Q. Print numbers till n:
-        1. In increasing order
-        2. In decreasing order
-*/
+// 1 2 3 4 5 4 3 2 1
+
 #include <bits/stdc++.h>
 using namespace std;
 
-void print_inc_desc(int n) {
-    if(n==0) return;
-    cout << n << endl;
-    print_inc_desc(n-1);
-    cout << n << endl;
+void print(int n) {
+	static int i = 1;
+	if (i == n) {
+		cout << i << " "; 
+		return;	
+	}
+	cout << i++ << " ";
+	print(n);
+	cout << --i << " ";
 }
 
 int main() {
-    int n;
-    cin >> n;
-    cout << endl;
-    print_inc_desc(n);
-    return 0;
+	int n;
+	cin >> n;
+	print(n);	
+	cout << endl;
+	return 0;
 }
